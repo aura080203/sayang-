@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>sayang aku ♡</title>
-   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -15,21 +14,21 @@
 <!-- Overlay / Enter Screen -->
   <div id="overlay">
     <div class="overlay-content">
-      <img src="images/overlay.jpg" class="overlay-img" alt="Surprise Photo">
+      <img src="overlay.jpg" class="overlay-img" alt="Surprise Photo">
       <h1 class="overlay-title">A surprise for you...</h1>
       <button class="enter-btn" onclick="startExperience()">Click to open ♡</button>
     </div>
   </div>
+
   <!-- Hidden Audio Player -->
   <audio id="bgMusic" loop>
-    <source src="images/music.mp3" type="audio/mpeg">
+    <source src="music.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
   <!-- Corner decorations -->
-  <img src="images/top-right.png" class="corner top-left">
-  <img src="images/mwa_kisses-removebg-preview.png" class="corner top-right">
-
+  <img src="top-right.png" class="corner top-left">
+  <img src="mwa_kisses-removebg-preview.png" class="corner top-right">
 
   <!-- HERO -->
   <div class="hero">
@@ -42,7 +41,7 @@
     <p class="scroll-hint">scroll ↓</p>
   </div>
 
-  <div class="divider"><div class="divider-line"></div><img src="images/swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
+  <div class="divider"><div class="divider-line"></div><img src="swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
 
   <!-- OUR STORY -->
   <section class="page-section fade-in">
@@ -54,7 +53,7 @@
         <div class="tl-dot"></div>
         <p class="tl-date">Chapter one</p>
         <p class="tl-text">⋆˙⟡ The day we met — I knew you were going to change my life with that blue jeans and white shirt.
-          You look like a beautiful disaster that I can not have at that time.  </p>
+          You look like a beautiful disaster that I can not have at that time.</p>
       </div>
 
       <div class="tl-item">
@@ -67,8 +66,7 @@
         <div class="tl-dot"></div>
         <p class="tl-date">Chapter three</p>
         <p class="tl-text">⋆˙⟡ The moment I knew — What a beautiful way to connect with you through our pain.
-          All I want is just to kiss your pain away.
-        </p>
+          All I want is just to kiss your pain away.</p>
       </div>
 
       <div class="tl-item">
@@ -80,67 +78,64 @@
     </div>
   </section>
 
-  <div class="divider"><div class="divider-line"></div><img src="images/swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
+  <div class="divider"><div class="divider-line"></div><img src="swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
 
   <!-- SPOTIFY -->
-<section class="page-section fade-in">
-  <p class="section-label">our song</p>
-  <h2 class="section-title">Press play ♫</h2>
+  <section class="page-section fade-in">
+    <p class="section-label">our song</p>
+    <h2 class="section-title">Press play ♫</h2>
 
-  <div style="display:flex; align-items:center; gap:32px; flex-wrap:wrap; justify-content:center; margin-bottom:20px;">
-
-    <div style="position:relative; width:200px; height:200px; flex-shrink:0;">
-      <img id="vinyl" src="images/vinyl.png" alt="vinyl"
-        style="width:200px; height:200px; border-radius:50%; animation:spin 4s linear infinite; animation-play-state:paused;">
+    <div style="display:flex; align-items:center; gap:32px; flex-wrap:wrap; justify-content:center; margin-bottom:20px;">
+      <div style="position:relative; width:200px; height:200px; flex-shrink:0;">
+        <img id="vinyl" src="vinyl.png" alt="vinyl"
+          style="width:200px; height:200px; border-radius:50%; animation:spin 4s linear infinite; animation-play-state:paused;">
+      </div>
+      <div style="text-align:left; max-width:220px;">
+        <p style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#9a4a4a; margin-bottom:8px;">New West</p>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:26px; font-style:italic; color:#2a1a0a; margin-bottom:6px;">Those Eyes</p>
+        <p style="font-size:16px; color:#863a48; margin-bottom:20px;">Our memories from Pantai Kelan</p>
+        <button onclick="toggleVinyl()" id="playBtn"
+          style="background:#2a0a0b; color:#e8b0b0; border:none; border-radius:30px; padding:10px 24px; font-family:'Cormorant Garamond',serif; font-size:15px; font-style:italic; cursor:pointer;">
+          ▶ play
+        </button>
+      </div>
     </div>
 
-    <div style="text-align:left; max-width:220px;">
-      <p style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#9a4a4a; margin-bottom:8px;">New West</p>
-      <p style="font-family:'Cormorant Garamond',serif; font-size:26px; font-style:italic; color:#2a1a0a; margin-bottom:6px;">Those Eyes</p>
-      <p style="font-size:16px; color:#863a48; margin-bottom:20px;">Our memories from Pantai Kelan</p>
-      <button onclick="toggleVinyl()" id="playBtn"
-        style="background:#2a0a0b; color:#e8b0b0; border:none; border-radius:30px; padding:10px 24px; font-family:'Cormorant Garamond',serif; font-size:15px; font-style:italic; cursor:pointer;">
-        ▶ play
-      </button>
+    <div id="spotifyEmbed" style="display:none; max-width:480px; margin:0 auto 20px;">
+      <iframe src="https://open.spotify.com/embed/track/50x1Ic8CaXkYNvjmxe3WXy?utm_source=generator"
+        width="100%" height="80" frameBorder="0" allowfullscreen
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
     </div>
-  </div>
 
-  <div id="spotifyEmbed" style="display:none; max-width:480px; margin:0 auto 20px;">
-    <iframe src="https://open.spotify.com/embed/track/50x1Ic8CaXkYNvjmxe3WXy?utm_source=generator"
-      width="100%" height="80" frameBorder="0" allowfullscreen
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy">
-    </iframe>
-  </div>
+    <p class="spotify-tip">This song reminds me of your eyes that I want to be drown in it so badly. ₊˚⊹♡</p>
+  </section>
 
-  <p class="spotify-tip">This song reminds me of your eyes that I want to be drown in it so badly. ₊˚⊹♡</p>
-</section>
+  <div class="divider"><div class="divider-line"></div><img src="swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
 
-
-   <div class="divider"><div class="divider-line"></div><img src="images/swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
   <!-- FAVOURITE PHOTO -->
   <section class="page-section fade-in">
     <p class="section-label">my favourite</p>
     <h2 class="section-title">A picture that stays with me</h2>
     <div class="soft-card photo-card">
-      <img src="images/man.jpg" alt="Favourite Photo of Him" style="width: 100%; height: auto; display: block; border-radius: 14px 14px 0 0;">
+      <img src="man.jpg" alt="Favourite Photo of Him" style="width: 100%; height: auto; display: block; border-radius: 14px 14px 0 0;">
       <p class="map-caption">✦ Pantai Kelan, Bali — my handsome and sweet boy!</p>
     </div>
   </section>
 
-  
-  <div class="divider"><div class="divider-line"></div><img src="images/swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
+  <div class="divider"><div class="divider-line"></div><img src="swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
 
- <!-- LOVE LETTER -->
-<section class="page-section fade-in">
-  <p class="section-label">from my heart</p>
-  <h2 class="section-title">A little letter for you</h2>
-  <div class="soft-card letter-card" style="padding: 0; overflow: hidden; border: none; background: transparent;">
-    <img src="images/letter.png" alt="My Handwritten Letter" style="width: 50%; height: auto; display: block; margin: 0 auto; border-radius: 20px;">
-  </div>
-</section>
+  <!-- LOVE LETTER -->
+  <section class="page-section fade-in">
+    <p class="section-label">from my heart</p>
+    <h2 class="section-title">A little letter for you</h2>
+    <div class="soft-card letter-card" style="padding: 0; overflow: hidden; border: none; background: transparent;">
+      <img src="letter.png" alt="My Handwritten Letter" style="width: 50%; height: auto; display: block; margin: 0 auto; border-radius: 20px;">
+    </div>
+  </section>
 
-  <div class="divider"><div class="divider-line"></div><img src="images/swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
+  <div class="divider"><div class="divider-line"></div><img src="swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
 
   <!-- GALLERY -->
   <section class="page-section fade-in">
@@ -149,39 +144,29 @@
     <div class="gallery-grid">
 
       <div class="gallery-slot">
-        <div class="slot-placeholder">
-          <img src="images/pic1.png" alt="memory 1">
-        </div>
+        <img src="pic1.png" alt="memory 1">
       </div>
 
       <div class="gallery-slot">
-        <div class="slot-placeholder">
-          <img src="images/pic2.png" alt="memory 2">
-        </div>
+        <img src="pic2.png" alt="memory 2">
       </div>
 
       <div class="gallery-slot">
-        <div class="slot-placeholder">
-          <img src="images/pic3.png" alt="memory 3">
-         
-        </div>
+        <img src="pic3.png" alt="memory 3">
       </div>
 
       <div class="gallery-slot">
-        <div class="slot-placeholder">
-          <img src="images/pic4.png" alt="memory 4">
-        </div>
+        <img src="pic4.png" alt="memory 4">
       </div>
 
     </div>
   </section>
 
-   <div class="divider"><div class="divider-line"></div><img src="images/swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
+  <div class="divider"><div class="divider-line"></div><img src="swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
 
-  
   <!-- FOOTER -->
   <footer class="footer fade-in">
-   <img src="images/image.png" alt="swans" class="footer-heart" style="width: 120px; height: auto; display: block; margin: 0 auto 16px;">
+    <img src="image.png" alt="swans" class="footer-heart" style="width: 120px; height: auto; display: block; margin: 0 auto 16px;">
     <p class="footer-text">Made with love, from your sun.</p>
   </footer>
 
