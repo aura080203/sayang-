@@ -55,7 +55,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
-  background-image: url("images/paper2.png");
+  background-image: url("paper2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -195,7 +195,7 @@ body {
       top: 0;
       bottom: 0;
       width: 170px; /* Width of your decorative image */
-      background-image: url("images/timeline.png");
+      background-image: url("timeline.png");
       background-size: 100% 100%; /* Stretches to fit the height of the entire section */
       background-repeat: no-repeat;
       background-position: center;
