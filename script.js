@@ -46,10 +46,22 @@ function startExperience() {
 
     /* Auto-start countdown if date is hardcoded above */
     if (targetDate) { tick(); countdownInterval = setInterval(tick, 1000); }
-      let playing = false;
-  function toggleVinyl() {
-    playing = !playing;
-    document.getElementById('vinyl').style.animationPlayState = playing ? 'running' : 'paused';
-    document.getElementById('playBtn').textContent = playing ? '⏸ pause' : '▶ play';
-    document.getElementById('spotifyEmbed').style.display = playing ? 'block' : 'none';
+let playing = false;
+
+function toggleVinyl() {
+  const audio = document.getElementById('vinylAudio');
+  const vinyl = document.getElementById('vinyl');
+  const btn = document.getElementById('playBtn');
+
+  playing = !playing;
+
+  if (playing) {
+    audio.play();
+    vinyl.style.animationPlayState = 'running';
+    btn.textContent = '⏸ pause';
+  } else {
+    audio.pause();
+    vinyl.style.animationPlayState = 'paused';
+    btn.textContent = '▶ play';
   }
+}
