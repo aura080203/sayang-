@@ -69,11 +69,17 @@ body {
       font-weight: 400;
     }
 .corner {
-  position: fixed;
-  width: 220px;
-  opacity: 0.85;
+  position: absolute;
+  width: 160px;
+  opacity: 0.9;
   pointer-events: none;
   z-index: 10;
+}
+.corner.top-left  { top: 0; left: 0; }
+.corner.top-right { top: 0; right: 0; }
+
+@media (max-width: 600px) {
+  .corner { width: 100px; }
 }
 .top-left     { top: 0; left: 0; transform: rotate(0deg); }
 .top-right    { top: 0; right: 0; transform: rotate(0deg); }
