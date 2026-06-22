@@ -80,37 +80,33 @@
 
   <div class="divider"><div class="divider-line"></div><img src="swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
 
-  <!-- SPOTIFY -->
-  <section class="page-section fade-in">
-    <p class="section-label">our song</p>
-    <h2 class="section-title">Press play ♫</h2>
+ <!-- SPOTIFY -->
+<section class="page-section fade-in">
+  <p class="section-label">our song</p>
+  <h2 class="section-title">Press play ♫</h2>
 
-    <div style="display:flex; align-items:center; gap:32px; flex-wrap:wrap; justify-content:center; margin-bottom:20px;">
-      <div style="position:relative; width:200px; height:200px; flex-shrink:0;">
-        <img id="vinyl" src="vinyl.png" alt="vinyl"
-          style="width:200px; height:200px; border-radius:50%; animation:spin 4s linear infinite; animation-play-state:paused;">
-      </div>
-      <div style="text-align:left; max-width:220px;">
-        <p style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#9a4a4a; margin-bottom:8px;">New West</p>
-        <p style="font-family:'Cormorant Garamond',serif; font-size:26px; font-style:italic; color:#2a1a0a; margin-bottom:6px;">Those Eyes</p>
-        <p style="font-size:16px; color:#863a48; margin-bottom:20px;">Our memories from Pantai Kelan</p>
-        <button onclick="toggleVinyl()" id="playBtn"
-          style="background:#2a0a0b; color:#e8b0b0; border:none; border-radius:30px; padding:10px 24px; font-family:'Cormorant Garamond',serif; font-size:15px; font-style:italic; cursor:pointer;">
-          ▶ play
-        </button>
-      </div>
+  <div style="display:flex; align-items:center; gap:32px; flex-wrap:wrap; justify-content:center; margin-bottom:20px;">
+    <div style="position:relative; width:200px; height:200px; flex-shrink:0;">
+      <img id="vinyl" src="vinyl.png" alt="vinyl"
+        style="width:200px; height:200px; border-radius:50%; animation:spin 4s linear infinite; animation-play-state:paused;">
     </div>
-
-    <div id="spotifyEmbed" style="display:none; max-width:480px; margin:0 auto 20px;">
-      <iframe src="https://open.spotify.com/embed/track/50x1Ic8CaXkYNvjmxe3WXy?utm_source=generator"
-        width="100%" height="80" frameBorder="0" allowfullscreen
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy">
-      </iframe>
+    <div style="text-align:left; max-width:220px;">
+      <p style="font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#9a4a4a; margin-bottom:8px;">New West</p>
+      <p style="font-family:'Cormorant Garamond',serif; font-size:26px; font-style:italic; color:#2a1a0a; margin-bottom:6px;">Those Eyes</p>
+      <p style="font-size:16px; color:#863a48; margin-bottom:20px;">Our memories from Pantai Kelan</p>
+      <button onclick="toggleVinyl()" id="playBtn"
+        style="background:#2a0a0b; color:#e8b0b0; border:none; border-radius:30px; padding:10px 24px; font-family:'Cormorant Garamond',serif; font-size:15px; font-style:italic; cursor:pointer;">
+        ▶ play
+      </button>
     </div>
+  </div>
 
-    <p class="spotify-tip">This song reminds me of your eyes that I want to be drown in it so badly. ₊˚⊹♡</p>
-  </section>
+  <audio id="vinylAudio">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <p class="spotify-tip">This song reminds me of your eyes that I want to be drown in it so badly. ₊˚⊹♡</p>
+</section>
 
   <div class="divider"><div class="divider-line"></div><img src="swan.png" class="divider-flower" alt="flower divider"><div class="divider-line"></div></div>
 
