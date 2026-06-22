@@ -398,3 +398,18 @@ body {
   .cd-num { font-size: 40px; }
   .gallery-grid { gap: 10px; }
 }
+
+/* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .page-section { padding: 60px 20px; }
+      .timeline::before { left: -30px; width: 120px; }
+      .tl-item { padding-left: 50px; }
+    }
+
+    @media (max-width: 480px) {
+      .letter-card { padding: 30px 20px; }
+      .letter-card img { width: 85%; }
+      .cd-num { font-size: 36px; }
+      .gallery-grid { gap: 10px; }
+      .corner { width: 120px; }
+    }
