@@ -418,4 +418,5 @@ body {
       .cd-num { font-size: 36px; }
       .gallery-grid { gap: 10px; }
       .corner { width: 120px; }
+      .timeline::before { display: none; }
     }
